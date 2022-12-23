@@ -1,6 +1,5 @@
 # StreamFlix
 A simple movie streamer written in Python 3.
-This is a simple wallpaper downloader in 
 
 ## Features
 * Easy to use.
