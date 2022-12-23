@@ -8,7 +8,7 @@ This is a simple wallpaper downloader in
 * No torrent required.
 
 ## Requirements
-* python [Python](https://www.python.org/downloads/)
+* [Python](https://www.python.org/downloads/)
 * requests
 
 ## How to setup
