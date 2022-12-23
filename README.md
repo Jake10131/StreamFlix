@@ -12,7 +12,8 @@ This is a simple wallpaper downloader in
 * requests
 
 ## How to setup
-**Step 1:**install [uBlock Origin](https://ublockorigin.com/) or download [Brave Brower](https://brave.com/)
+
+**Step 1:** Install [uBlock Origin](https://ublockorigin.com/) or download [Brave Brower](https://brave.com/)
 
 **Step 2:** Download python 3.11
 
