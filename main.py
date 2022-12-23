@@ -2,6 +2,15 @@ import requests
 import webbrowser
 
 def main():
+  print("""
+   _____ _                            ______ _ _      
+  / ____| |                          |  ____| (_)     
+ | (___ | |_ _ __ ___  __ _ _ __ ___ | |__  | |___  __
+  \___ \| __| '__/ _ \/ _` | '_ ` _ \|  __| | | \ \/ /
+  ____) | |_| | |  __/ (_| | | | | | | |    | | |>  < 
+ |_____/ \__|_|  \___|\__,_|_| |_| |_|_|    |_|_/_/\_\
+
+  """)
   name = input("Enter the movie name: ")
   print(f"Searching for {name}")
   sitelink = f"https://seapi.link/?type=search&query={name}"
