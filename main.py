@@ -11,13 +11,14 @@ def main():
  |_____/ \__|_|  \___|\__,_|_| |_| |_|_|    |_|_/_/\_\
 
   """)
-  name = input("Enter the movie name: ")
+  name = input("Enter the movie name: ").strip()
   print(f"Searching for {name}")
   sitelink = f"https://seapi.link/?type=search&query={name}"
   url_results = requests.get(sitelink).json()
   results = url_results["results"]
   status = url_results["status"]
   movieurl = []
+  moviename=[]
   index = 1
   if (status == 200):
     for result in results:
@@ -25,10 +26,12 @@ def main():
         print(f'({index}){result["title"]} --> {result["quality"]}\n')
         index += 1
         movieurl.append(result["url"])
+        moviename.append(result["title"])
   if movieurl:
-    choice = int(input("Enter the index of the moive: "))
+    choice = int(input("Enter the index of the moive: ").strip())
     try:
       stream = movieurl[choice -1]
+      print(f'Playing: {moviename[choice -1]}')
       webbrowser.open(stream)
     except IndexError:
       print("Incorrect Index entered")
